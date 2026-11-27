@@ -1,5 +1,5 @@
 {
   "appName": "Music Library",
-  "storage": "memory",
-  "dataFile": "tracks.json"
+  "storage": "json",
+  "dataFile": "storage/tracks.json"
 }
