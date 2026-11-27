@@ -59,4 +59,11 @@ class Track {
     final seconds = (durationSeconds % 60).toString().padLeft(2, '0');
     return '$minutes:$seconds';
   }
+
+  /// Короткий текстовий вигляд треку для виводу в консоль.
+  @override
+  String toString() {
+    final mark = isFavorite ? '[*]' : '[ ]';
+    return '$mark $artist - $title ($formattedDuration)';
+  }
 }
