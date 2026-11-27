@@ -1,0 +1,17 @@
+# Dart
+.dart_tool/
+.packages
+build/
+*.exe
+*.dill
+
+# Дані застосунку
+data/
+storage/
+
+# IDE та система
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
