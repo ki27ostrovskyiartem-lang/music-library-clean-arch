@@ -141,8 +141,12 @@ class Cli {
       return null;
     }
     _printTracks(tracks);
-    final index = int.parse(_ask('Номер треку:')) - 1;
-    return tracks[index];
+    final number = int.tryParse(_ask('Номер треку:'));
+    if (number == null || number < 1 || number > tracks.length) {
+      print('Некоректний номер.');
+      return null;
+    }
+    return tracks[number - 1];
   }
 
   void _remove() {
