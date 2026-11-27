@@ -49,7 +49,10 @@ class JsonTrackRepository implements TrackRepository {
           },
         )
         .toList();
-    File(_path).writeAsStringSync(const JsonEncoder.withIndent('  ').convert(data));
+    final file = File(_path);
+    // Створюємо каталог для файлу, якщо його ще немає.
+    file.parent.createSync(recursive: true);
+    file.writeAsStringSync(const JsonEncoder.withIndent('  ').convert(data));
   }
 
   @override
