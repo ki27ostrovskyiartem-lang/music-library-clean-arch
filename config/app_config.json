@@ -1,0 +1,5 @@
+{
+  "appName": "Music Library CLI",
+  "storage": "json",
+  "dataFile": "data/tracks.json"
+}

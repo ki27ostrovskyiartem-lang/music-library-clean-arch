@@ -1,0 +1,7 @@
+name: music_library
+description: Консольна музична бібліотека. Лабораторна робота 5 (Clean Architecture і Git).
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
