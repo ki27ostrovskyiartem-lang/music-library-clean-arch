@@ -63,3 +63,7 @@ dart run bin/main.dart demo     # автоматичний сценарій
 - `feature/*`: гілки під окремі задачі, зливаються в `develop` через pull request.
 
 Повідомлення комітів оформлені за Conventional Commits (`feat`, `fix`, `refactor`, `docs`, `chore`).
+
+## Автор
+
+Островський Артем, група 4КІ3.
